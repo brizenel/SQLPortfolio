@@ -58,10 +58,10 @@ WHERE PolioExemption > 50
 SELECT School,
 CASE   
     WHEN MedicalExemption >= 30 THEN 'High'
-	ELSE 'Low'
-END AS 'MedicalExemptionRank',
+    ELSE 'Low'
+    END AS 'MedicalExemptionRank',
 CASE
      WHEN PersonalExemption >= 30 THEN 'High' 
-	 ELSE 'Low'
-END AS 'PersonalExemptionRank'
+     ELSE 'Low'
+     END AS 'PersonalExemptionRank'
 FROM [K-12VacRecs]
